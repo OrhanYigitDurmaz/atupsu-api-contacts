@@ -17,9 +17,9 @@ import (
 )
 
 func main() {
-	dsn := flag.String("dsn", "", "ODBC data source name (e.g. atilim_64bit)")
+	dsn := flag.String("dsn", "atilim64bit", "ODBC data source name")
 	mdbPath := flag.String("mdb", `C:\atilim\atilim.mdb`, "path to atilim.mdb (ignored if -dsn is set)")
-	addr := flag.String("addr", ":8080", "listen address")
+	addr := flag.String("addr", ":4999", "listen address")
 	debug := flag.Bool("debug", false, "run interactively (skip service wrapper)")
 	flag.Parse()
 
